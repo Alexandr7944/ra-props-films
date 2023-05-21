@@ -1,24 +1,15 @@
 import './App.css'
-import Stars from './components/Stars'
+import Card from './components/Card'
+import hero1 from '../public/1674378753_3-29.jpg';
+import hero2 from '../public/62-621471_super-man-png-image-jim-lee-superman-statue.png';
+import hero3 from '../public/supermen-kartinki-supergeroya-16.jpg';
 
 function App() {
   return (
     <div className="app">
-      <div className="card">
-        <img src="../public/62-621471_super-man-png-image-jim-lee-superman-statue.png" alt="Hero" className="card__image" />
-        <h2 className="card__title">Hero</h2>
-      <Stars count={1} />
-      </div>
-      <div className="card">
-        <img src="../public/62-621471_super-man-png-image-jim-lee-superman-statue.png" alt="Hero" className="card__image" />
-        <h2 className="card__title">Hero</h2>
-      <Stars count={4} />
-      </div>
-      <div className="card">
-        <img src="../public/62-621471_super-man-png-image-jim-lee-superman-statue.png" alt="Hero" className="card__image" />
-        <h2 className="card__title">Hero</h2>
-      <Stars count={6} />
-      </div>
+      <Card link={hero1} count={1} />
+      <Card link={hero2} count={4} />
+      <Card link={hero3} count={6} />
     </div>
   )
 }
